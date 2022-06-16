@@ -48,14 +48,14 @@ address {
     --main-txt-color: #212121;
     --dark-blue-txt-color: #0f4877;
     --light-blue-txt-color: #2196F3;
-    --medium-light-blue-color: #188CE8;
+    --medium-light-blue-color: #188ce8;
     --grey-color: #757575;
     --white-color: #ffffff;
     --dark-white-color: #cecece;
     --dark-grey-color: #2F303A;
-    --light-grey-color: #F5F4FA;
+    --light-grey-color: #f5f4fA;
     --container-width: 1200px;
-    --svg-color: #AFB1B8;
+    --svg-color: #afb1b8;
 }
 
 html{
@@ -127,8 +127,19 @@ header{
     color: var(--dark-blue-txt-color);
 }
 
+.header-contacts{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.header-contacts a {
+    display: flex;
+    align-items: center;
+}
+
 .navigation-mail{
-    margin-right: 30px;
+    margin-right: 50px;
 }
 .navigation-mail, .navigation-tel{
     text-decoration: none;
@@ -143,40 +154,21 @@ header{
     color: var(--light-blue-txt-color);
 }
 
-.nav-link-portfolio, .current-two{
-    color: var(--light-blue-txt-color);
-}
-
-.icon-email,
-.icon-tel {
-    margin-right: 5px;
-    stroke-width: 0.8;
-    stroke-opacity: 1;
+.icon{
+    margin-right: 10px;
     fill: currentColor;
 }
 
 .header-contacts a:hover,
-.header-contacts a:active{
+.header-contacts a:focus {
     color: var(--light-blue-txt-color);
     fill: var(--light-blue-txt-color);
 }
- 
 
 .header-contacts a:active{
     color: var(--dark-blue-txt-color);
     fill: var(----dark-blue-txt-color);
 }
- 
-.header-contacts{
-    display: flex;
-    justify-content: baseline;
-    align-items: baseline;
-}
-
-.headers-contacts-content{
-    display: flex;
-}
-
 
 /* MAIN */
 
@@ -341,7 +333,7 @@ header{
 }
 
 .team-section {
-    background-color: #F5F4FA;
+    background-color: var(--light-grey-color);
     padding: 94px 0;
 }
 
@@ -415,8 +407,7 @@ header{
     text-decoration: none;
     padding: 12px 12px 12px 12px;
     fill: var(--svg-color);
-    border: 0 solid #fff;
-    border-radius: 0%;
+    border-radius: 50%;
 }
 
 .insta, .fb, .twit, .link{
@@ -424,12 +415,62 @@ header{
     height:20px;
 }
 
-.team-social a:hover{
-    fill: var(--white-color);
-    background-color: var(--light-blue-txt-color);
+.team-social a:hover,
+.team-social a:focus{
     border-radius: 50%;
+    background-color: var(--light-blue-txt-color);
+    fill: var(--white-color);
 }
 
+/*REGULAR CLIENTS */
+
+.regular-clients-sect{
+    background-color: var(--white-color);
+    padding: 74px 0 94px 0;
+}
+
+.regular-clients-container{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+} 
+
+.regular-clients-title{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;  
+}
+
+.regular-clients-list{
+    display: flex;
+    justify-content: space-between; 
+}
+
+.client a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 92px;
+    fill: var(--svg-color);
+    border: 1px solid var(--svg-color);
+    border-radius: 4px;
+}
+
+.logo{
+    margin: 16px 32px 16px 32px;
+    width: 106px;
+    height: 60px;
+}
+
+.client a:hover,
+.client a:focus{
+    fill: var(--light-blue-txt-color);
+    border-color: var(--light-blue-txt-color);
+}
 /* FOOTER */
 
 footer{
@@ -441,6 +482,7 @@ footer{
     width: var(--container-width);
     margin: 0 auto;
     padding: 0 15px;
+    display: flex;
 }
 
 .footer-logo{
@@ -508,6 +550,17 @@ footer{
 
 .footer-list a:active {
     color: var(--dark-blue-txt-color);
+}
+
+.footer-social{
+    margin-top: 3px;
+    margin-left: 15px;
+}
+
+.footer-contacts-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /*                  СЕКТОР ПОРТФОЛІО                     */
