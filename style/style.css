@@ -55,6 +55,7 @@ address {
     --dark-grey-color: #2F303A;
     --light-grey-color: #F5F4FA;
     --container-width: 1200px;
+    --svg-color: #AFB1B8;
 }
 
 html{
@@ -138,41 +139,37 @@ header{
     color: var(--grey-color);
 }
 
-.navigation-mail:hover,
-.navigation-mail:focus{
+.icon-email,
+.icon-tel {
+    margin-right: 5px;
+    stroke-width: 0.8;
+    stroke-opacity: 1;
+    fill: currentColor;
+}
+
+.header-contacts a:hover,
+.header-contacts a:active{
     color: var(--light-blue-txt-color);
-}
-
-.navigation-tel:hover,
-.navigation-tel:focus{
-    color: var(--light-blue-txt-color);
-}
-
-.navigation-mail:active{
-    color: var(--dark-blue-txt-color);
-}
-
-.navigation-tel:active{
-    color: var(--dark-blue-txt-color);
-}
-
-.header-contancts{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.icon-email, .icon-tel{
-    margin-right: 10px;
-}
-
-.icon-email, .icon-tel {
-    fill: var(--grey-color);
-}
-
-.icon-email, .icon-tel:hover{
     fill: var(--light-blue-txt-color);
 }
+ 
+
+.header-contacts a:active{
+    color: var(--dark-blue-txt-color);
+    fill: var(----dark-blue-txt-color);
+}
+ 
+.header-contacts{
+    display: flex;
+    justify-content: baseline;
+    align-items: baseline;
+}
+
+.headers-contacts-content{
+    display: flex;
+}
+
+
 /* MAIN */
 
 
@@ -192,9 +189,7 @@ header{
     background-image:
     linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/hero-bgimg.jpg);
-    background-color: #2F303A 40%;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-color: #2F303A;
     background-size: cover;
 }
 
@@ -202,6 +197,7 @@ header{
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
+    letter-spacing: 0.06em;
     color: var(--white-color);
     text-align: center;
     text-transform: uppercase;
@@ -272,13 +268,13 @@ header{
 }
 
 .features-item + .features-item {
-    margin-left: 35px;
+    margin-left: 30px;
 }
 
 .icon-container{
     width: 270px;
     height: 120px;
-    display: flex;
+    padding: 25px 100px 25px 100px;
     justify-content: center;
     background-color: #F5F4FA;
     margin-bottom: 30px;
@@ -357,14 +353,14 @@ header{
     justify-content: space-between;
 }
 
-.team-list li {
+.team-members {
     background-color: var(--white-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
 
 .team-members-name{
-    padding: 30px 0;
+    padding: 30px 0 16px 0;
 }
 
 .team-list h3 {
@@ -387,7 +383,43 @@ header{
     margin-bottom: 0;
 }
 
+.team-social-container{
+    width: 206px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
 
+.team-social{
+    display: flex;
+}
+
+.team-social li{
+    margin-left: 10px;
+    border: 0 solid #fff;
+}
+
+.team-social li:nth-child(1){
+    margin-left: 0;
+}
+
+.team-social a{
+    height: 44px;
+    display: block;
+    text-decoration: none;
+    padding: 12px 12px 12px 12px;
+    fill: var(--svg-color);
+}
+
+.insta, .fb, .twit, .link{
+    width:20px; 
+    height:20px;
+}
+
+.team-social a:hover{
+    fill: var(--white-color);
+    background-color: var(--light-blue-txt-color);
+    border-radius: 50%;
+}
 /* FOOTER */
 
 footer{
