@@ -139,6 +139,14 @@ header{
     color: var(--grey-color);
 }
 
+.navigation .current{
+    color: var(--light-blue-txt-color);
+}
+
+.nav-link-portfolio, .current-two{
+    color: var(--light-blue-txt-color);
+}
+
 .icon-email,
 .icon-tel {
     margin-right: 5px;
@@ -395,7 +403,6 @@ header{
 
 .team-social li{
     margin-left: 10px;
-    border: 0 solid #fff;
 }
 
 .team-social li:nth-child(1){
@@ -408,6 +415,8 @@ header{
     text-decoration: none;
     padding: 12px 12px 12px 12px;
     fill: var(--svg-color);
+    border: 0 solid #fff;
+    border-radius: 0%;
 }
 
 .insta, .fb, .twit, .link{
@@ -420,6 +429,7 @@ header{
     background-color: var(--light-blue-txt-color);
     border-radius: 50%;
 }
+
 /* FOOTER */
 
 footer{
@@ -590,10 +600,15 @@ footer{
     margin-left: -30px;
     
 }
+
 .template-list li {
     flex-basis: calc(100% / 3 - 30px);
     margin-top: 30px;
     margin-left: 30px;
+}
+
+.template-list li:hover{
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .card-text{
