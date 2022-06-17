@@ -401,6 +401,10 @@ header{
     margin-left: 0;
 }
 
+.team-social li:nth-child(4){
+    margin-right: 0;
+}
+
 .team-social a{
     height: 44px;
     display: block;
