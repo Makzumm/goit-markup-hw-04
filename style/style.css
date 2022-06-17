@@ -417,9 +417,13 @@ header{
 
 .team-social a:hover,
 .team-social a:focus{
-    border-radius: 50%;
     background-color: var(--light-blue-txt-color);
     fill: var(--white-color);
+}
+
+.team-social a:active{
+    background-color: var(--dark-blue-txt-color);
+    fill: var(--dark-white-color);
 }
 
 /*REGULAR CLIENTS */
@@ -470,6 +474,11 @@ header{
 .client a:focus{
     fill: var(--light-blue-txt-color);
     border-color: var(--light-blue-txt-color);
+}
+
+.client a:active{
+    border-color: var(--dark-blue-txt-color);
+    fill: var(--dark-blue-txt-color);
 }
 /* FOOTER */
 
@@ -552,15 +561,64 @@ footer{
     color: var(--dark-blue-txt-color);
 }
 
-.footer-social{
-    margin-top: 3px;
-    margin-left: 15px;
+.footer-social-container{
+    margin-left: 70px;
+    margin-top: 12px;
 }
 
 .footer-contacts-list{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+}
+
+.footer-social-title{
+    align-self: flex-end;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: var(--white-color);
+}
+
+.footer-icon{
+    margin-left: 10px;
+}
+
+.footer-icon:nth-child(1){
+    margin-left: 0;
+}
+
+.footer-icon:nth-child(4){
+    margin-right: 0;
+}
+
+.insta-footer, .fb-footer, .link-footer, .twit-footer{
+    height: 20px;
+    width: 20px;
+}
+
+.footer-contacts-list a{
+    width: 44px;
+    height: 44px;
+    display: block;
+    text-decoration: none;
+    padding: 12px 12px 12px 12px;
+    fill: var(--white-color);
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-contacts-list a:hover,
+.footer-contacts-list a:focus{
+    background-color: var(--light-blue-txt-color);
+}
+
+.footer-contacts-list a:active{
+    background-color: var(--dark-blue-txt-color);
+    fill: var(--dark-white-color);
 }
 
 /*                  СЕКТОР ПОРТФОЛІО                     */
